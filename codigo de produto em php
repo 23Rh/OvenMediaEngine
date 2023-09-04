@@ -1,0 +1,55 @@
+<?php
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $escolha = $_POST['escolha'];
+
+    switch ($escolha) {
+        case '1':
+            echo "Seu produto é da região SUL.";
+            break;
+        case '2':
+            echo "Seu produto é da região NORTE.";
+            break;
+
+        case '3':
+            echo "Seu produto é da região LESTE.";
+            break;
+
+        case '4':
+            echo "seu produto é da região OESTE.";
+            break;
+
+         case '5':
+            echo "seu produto é da região NORDESTE.";
+            break;
+
+         case '6':
+            echo "seu produto é da região NORDESTE.";
+            break;
+
+        case '7':
+             echo "seu produto é da região SUDESTE.";
+             break;
+
+        case '8':
+            echo "seu produto é da região SUDESTE.";
+            break;
+
+         case '9':
+            echo "seu produto é da região SUDESTE.";
+            break;
+
+         case '10':
+            echo "seu produto é da região CENTRO-OESTE.";
+            break;
+
+         case '11':
+             echo "seu produto é da região NORESTE.";
+            break;
+
+        default:
+            echo "Seu produto é IMPORTADO. ";
+            break;
+    }
+}
+?>
